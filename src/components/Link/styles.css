@@ -1,0 +1,70 @@
+@reference "../../styles/global.css";
+
+@layer components {
+  .link {
+    color: var(--color-primary);
+  }
+
+  .link--a {
+    color: var(--color-primary);
+  }
+
+  .link--primary {
+    color: var(--color-primary);
+  }
+  
+  .link--secondary {
+    color: var(--color-secondary);
+  }
+
+  .link--warning {
+    color: var(--color-warning);
+  }
+  
+  .link--danger {
+    color: var(--color-danger);
+  }
+  
+  .link--cancel {
+    color: var(--color-gray);
+  }
+  
+  .link--button {
+    @apply border border-zinc-400 p-3 text-black rounded-md;
+    color: var(--color-text);
+  }
+
+  .link.link--button--primary {
+    border-color: var(--color-primary);
+    background-color: var(--color-primary);
+    color: var(--color-primary-foreground);
+  }
+  
+  .link.link--button--secondary {
+    border-color: var(--color-secondary);
+    background-color: var(--color-secondary);
+    color: var(--color-secondary-foreground);
+  }
+  
+  .link.link--button--warning {
+    border: 1px solid var(--color-warning);
+    background-color: var(--color-warning);
+    color: var(--color-text-inverted);
+  }
+  
+  .link.link--button--danger {
+    border: 1px solid var(--color-destructive);
+    background-color: var(--color-destructive);
+    color: var(--color-distructive-foreground);
+  }
+  
+  .link.link--button--cancel {
+    border: 1px solid var(--color-muted);
+    background-color: var(--color-muted);
+    color: var(--color-muted-foreground);
+  }
+  
+  .link.link--button--text {
+    @apply appearance-none border-none;
+  }
+}

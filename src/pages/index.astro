@@ -1,0 +1,9 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import { Text } from '@/components/Text';
+
+---
+<Layout>
+	<Text variant="h1" i18n={{ key: '/.greeting' }} client:load />
+	<Text variant="h2" i18n={{ key: '/.sub' }} client:load />
+</Layout>

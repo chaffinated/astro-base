@@ -1,0 +1,55 @@
+{
+	// "main": "dist/_worker.js/index.js",
+	"name": "astro-base",
+  "compatibility_date": "2026-01-27",
+  "compatibility_flags": [
+    "nodejs_compat",
+    "global_fetch_strictly_public"
+  ],
+	"assets": {
+		"binding": "ASSETS",
+		"directory": "./dist"
+	},
+	"observability": {
+    "enabled": true
+  },
+  
+  "env": {
+    "dev": {
+      "vars": {
+        "GTM_ID": ""
+      },
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "astro-base",
+          "database_id": ""
+        }
+      ]
+    },
+    "preview": {
+      "vars": {
+        "GTM_ID": ""
+      },
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "astro-base",
+          "database_id": ""
+        }
+      ]
+    },
+    "production": {
+      "vars": {
+        "GTM_ID": ""
+      },
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "astro-base",
+          "database_id": ""
+        }
+      ]
+    }
+  }
+}
