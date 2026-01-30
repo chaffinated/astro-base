@@ -5,7 +5,7 @@ import * as schema from '@/schema';
 
 export function useDatabase(locals: App.Locals) {
   const { DB } = env;
-  const db = drizzle(DB, { schema });
+  const db = drizzle(DB!, { schema });
   return db;
 }
 

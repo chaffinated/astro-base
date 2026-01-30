@@ -8,8 +8,13 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
+  output: 'server',
   integrations: [react(), partytown()],
-  adapter: cloudflare(),
+  adapter: cloudflare({
+    workerEntryPoint: {
+      path: './src/worker.ts',
+    },
+  }),
   vite: {
     plugins: [
       tailwindcss(),
